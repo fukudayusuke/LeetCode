@@ -31,10 +31,10 @@ Only one valid answer exists.
  */
 
 
-use std::collections::HashMap;
+use std::collections::HashMap;                                          // include
 
-impl Solution {                                                         // 
-    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {           //
+impl Solution {                                                         // class宣言
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {           // Function 
         let mut compliments: HashMap<i32, i32> = HashMap::new();        //
         for i in 0..nums.len() {                                        //
             match compliments.get(&nums[i]) {                           //
